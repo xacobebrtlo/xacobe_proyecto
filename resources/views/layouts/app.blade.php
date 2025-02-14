@@ -36,12 +36,12 @@
                     @if (Auth::check())
                         <ul class="navbar-nav me-auto">
                             <li class="nav-items">
-                                <a class="nav-link" href="{{ route('ejercicios.index') }}">{{ __('Ejercicios') }}</a>
+                                <a class="nav-link"
+                                    href="{{ route('musculares.index') }}">{{ __('Grupo Muscular') }}</a>
                             </li>
                             <li class="nav-items">
-                                <a class="nav-link" href="{{ route('musculares.index') }}">{{ __('Muscular') }}</a>
+                                <a class="nav-link" href="{{ route('ejercicios.index') }}">{{ __('Ejercicios') }}</a>
                             </li>
-
                         </ul>
                     @endif
 

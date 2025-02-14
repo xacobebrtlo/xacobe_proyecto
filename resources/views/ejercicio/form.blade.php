@@ -6,7 +6,7 @@
             <input type="text" name="muscular_id" class="form-control @error('muscular_id') is-invalid @enderror" value="{{ old('muscular_id', $ejercicio?->muscular_id) }}" id="muscular_id" placeholder="Muscular Id">
             {!! $errors->first('muscular_id', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!} --}}
             {{ Form::label('musculares') }}
-            {{ Form::select('muscular_id', $musculares, $ejercicios->muscular_id, ['class' => 'form-control' . ($errors->has('muscular_id') ? ' is-invalid' : ''), 'placeholder' => 'Muscular Id']) }}
+            {{ Form::select('muscular_id', $musculares, $ejercicio->muscular_id, ['class' => 'form-control' . ($errors->has('muscular_id') ? ' is-invalid' : ''), 'placeholder' => 'Selecciona el grupo muscular']) }}
             {!! $errors->first('muscular_id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
